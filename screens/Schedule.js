@@ -1,13 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
-import EventDetails from './screens/EventDetails';
-import Schedule from './screens/Schedule';
 
-export default class App extends React.Component {
+export default class Schedule extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Schedule />
+        <Image source={ require('../assets/bandung.jpg') } />      
       </View>
     );
   }
