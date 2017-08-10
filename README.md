@@ -100,4 +100,46 @@ vpart 2 basic list, 16:00
 
 * Create new folder: components
 
-* 
+* Create new file ToggleButton.js
+
+* Quick do by copy Schedule.js to ToggleButton.js and update it respectfully.
+
+* import ToggleButton.js into Schedule.js 
+
+* And render ToggleButton below the text.
+
+      <ToggleButton 
+        items={["THURSDAY", "FRIDAY"]}
+        value={"THURSDAY"}
+      />
+
+* In ToggleButton.js add props under render() function:
+
+      render() {
+        const {items, value} = this.props
+
+* Create Helper method:
+
+       renderItem = (item) => {
+        return (
+          <View>
+            <Text>{item}</Text>
+          </View>
+        );
+      }
+
+* And add to return:
+
+      return (
+        <View style={styles.container}>
+          {items.map(this.renderItem)}        
+        </View>
+      );
+
+* Cover the warning with the key id:
+
+      <View key={item}>
+        <Text>{item}</Text>
+      </View>
+      
+            

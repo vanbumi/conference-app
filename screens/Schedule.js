@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
+import ToggleButton from '../components/ToggleButton';
 
 export default class Schedule extends React.Component {
   render() {
@@ -8,6 +9,10 @@ export default class Schedule extends React.Component {
         <Image style={styles.image} source={ require('../assets/bandung.jpg') }> 
           <Image style={styles.logo} source={ require('../assets/logo.png') } />
           <Text style={styles.title}>React Bandung Conference</Text>
+          <ToggleButton 
+            items={["THURSDAY", "FRIDAY"]}
+            value={"THURSDAY"}
+          />
         </Image>      
       </View>
     );
