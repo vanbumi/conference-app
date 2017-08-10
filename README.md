@@ -85,8 +85,19 @@
 
 ### Part 2
 
-Create new folder: screens
-Create new file: EventDetails.js
-Copy all from App.js to EventDetails.js
-Import EventDetails in App.js
-Create new file screens/Schedule.js 
+* Create new folder: screens
+* Create new file: EventDetails.js
+* Copy all from App.js to EventDetails.js
+* Import EventDetails in App.js
+* Create new file screens/Schedule.js
+* Add Image to Schedule.js 
+
+### Part 3
+
+#### Toggle Button
+
+vpart 2 basic list, 16:00
+
+* Create new folder: components
+
+* 
